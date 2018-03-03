@@ -1,0 +1,65 @@
+def side_effect_test(value):
+    # Do something to modify the value
+    value[1] = "orange"
+    print("Inside the function, the number becomes {}".format(value))
+
+if __name__ == "__main__":
+    # Create the value
+    value = ["red", "green", "blue"]
+    print("Outside the function, the value starts as {}".format(value))
+    side_effect_test(value)
+    print("Outside the function, the value is now {}".format(value))
+    
+##Function using a number-INT data type##
+
+def side_effect_test(value):
+    # Do something to modify the value
+    value[1] = 5
+    print("Inside the function, the value becomes {}".format(value))
+
+if __name__ == "__main__":
+    # Create the value
+    value = [1,2,3]
+    print("Outside the function, the value starts as {}".format(value))
+    side_effect_test(value)
+    print("Outside the function, the value is now {}".format(value))
+    
+    
+## Function using dictionary as the value ##
+def side_effect_test(value):
+    # Do something to modify the value
+    value["fish"]= "cow"
+    print("Inside the function, the number becomes {}".format(value))
+
+if __name__ == "__main__":
+    # Create the value
+  	value={"number": 1, "fish":"shark", "word":"hello"}
+    print("Outside the function, the value starts as {}".format(value))
+    side_effect_test(value)
+    print("Outside the function, the value is now {}".format(value))
+    
+## Function using Boolean   
+def side_effect_test(value):
+    # Do something to modify the value
+    value[1] = True
+    print("Inside the function, the value becomes {}".format(value))
+
+if __name__ == "__main__":
+    # Create the value
+    value = [False, False, False]
+    print("Outside the function, the value starts as {}".format(value))
+    side_effect_test(value)
+    print("Outside the function, the value is now {}".format(value))
+
+#Function using Boolean   
+def side_effect_test(value):
+    # Do something to modify the value
+    value[1] = True
+    print("Inside the function, the value becomes {}".format(value))
+
+if __name__ == "__main__":
+    # Create the value
+    value = [False, False, False]
+    print("Outside the function, the value starts as {}".format(value))
+    side_effect_test(value)
+    print("Outside the function, the value is now {}".format(value))
